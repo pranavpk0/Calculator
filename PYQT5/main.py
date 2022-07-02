@@ -1,7 +1,5 @@
 import operator
-
 from PyQt5.QtWidgets import QApplication, QMainWindow
-
 from ui import Ui_MainWindow
 
 READY = 0
@@ -14,12 +12,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.current_op = None
         self.last_operation = None
         self.stack = [0]
+
         self.state = READY
         self.setupUi(self)
-
         # Setup numbers.
         for n in range(0, 10):
-            getattr(self, 'pushButton_n%s' % n).pressed.connect(lambda v=n: self.input_number(v))
+            getattr(self, "pushButton_n%s" % n).pressed.connect(
+                lambda v=n: self.input_number(v)
+            )
 
         # Setup operations.
         self.pushButton_add.pressed.connect(lambda: self.operation(operator.add))
@@ -79,7 +79,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             try:
                 self.stack = [self.current_op(*self.stack)]
             except Exception:
-                self.lcdNumber.display('Err')
+                self.lcdNumber.display("Err")
                 self.stack = [0]
             else:
                 self.current_op = None
@@ -87,7 +87,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.display()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = QApplication([])
     app.setApplicationName("Calculator")
 

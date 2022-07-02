@@ -16,14 +16,20 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(338, 429)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("res/icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("res/icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         MainWindow.setWindowIcon(icon)
-        MainWindow.setStyleSheet("background-color: rgb(128, 128, 128);")
+        MainWindow.setStyleSheet("background-color: rgb(0, 0, 20);")
         self.centralWidget = QtWidgets.QWidget(MainWindow)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.centralWidget.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.centralWidget.sizePolicy().hasHeightForWidth()
+        )
         self.centralWidget.setSizePolicy(sizePolicy)
         self.centralWidget.setObjectName("centralWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralWidget)
@@ -95,7 +101,9 @@ class Ui_MainWindow(object):
         self.pushButton_mul.setFont(font)
         self.pushButton_mul.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("res/mul.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(
+            QtGui.QPixmap("res/mul.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_mul.setIcon(icon4)
         self.pushButton_mul.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_mul.setFlat(True)
@@ -191,7 +199,9 @@ class Ui_MainWindow(object):
         self.pushButton_n3.setStyleSheet("")
         self.pushButton_n3.setText("")
         icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.QPixmap("res/3.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon10.addPixmap(
+            QtGui.QPixmap("res/3.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_n3.setIcon(icon10)
         self.pushButton_n3.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_n3.setFlat(True)
@@ -206,7 +216,9 @@ class Ui_MainWindow(object):
         self.pushButton_div.setFont(font)
         self.pushButton_div.setText("")
         icon11 = QtGui.QIcon()
-        icon11.addPixmap(QtGui.QPixmap("res/div.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon11.addPixmap(
+            QtGui.QPixmap("res/div.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_div.setIcon(icon11)
         self.pushButton_div.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_div.setFlat(True)
@@ -221,7 +233,9 @@ class Ui_MainWindow(object):
         self.pushButton_sub.setFont(font)
         self.pushButton_sub.setText("")
         icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.QPixmap("res/min.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon12.addPixmap(
+            QtGui.QPixmap("res/min.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_sub.setIcon(icon12)
         self.pushButton_sub.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_sub.setFlat(True)
@@ -236,7 +250,9 @@ class Ui_MainWindow(object):
         self.pushButton_add.setFont(font)
         self.pushButton_add.setText("")
         icon13 = QtGui.QIcon()
-        icon13.addPixmap(QtGui.QPixmap("res/plus.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon13.addPixmap(
+            QtGui.QPixmap("res/plus.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_add.setIcon(icon13)
         self.pushButton_add.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_add.setFlat(True)
@@ -251,7 +267,9 @@ class Ui_MainWindow(object):
         self.pushButton_pc.setFont(font)
         self.pushButton_pc.setText("")
         icon14 = QtGui.QIcon()
-        icon14.addPixmap(QtGui.QPixmap("res/per.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon14.addPixmap(
+            QtGui.QPixmap("res/per.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_pc.setIcon(icon14)
         self.pushButton_pc.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_pc.setFlat(True)
@@ -267,7 +285,9 @@ class Ui_MainWindow(object):
         self.pushButton_eq.setStyleSheet("background-color: rgb(0, 255, 0);")
         self.pushButton_eq.setText("")
         icon15 = QtGui.QIcon()
-        icon15.addPixmap(QtGui.QPixmap("res/equal.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon15.addPixmap(
+            QtGui.QPixmap("res/equal.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_eq.setIcon(icon15)
         self.pushButton_eq.setIconSize(QtCore.QSize(75, 50))
         self.pushButton_eq.setFlat(True)
@@ -283,7 +303,9 @@ class Ui_MainWindow(object):
         self.pushButton_ac.setStyleSheet("background-color: rgb(255, 0, 0);")
         self.pushButton_ac.setText("")
         icon16 = QtGui.QIcon()
-        icon16.addPixmap(QtGui.QPixmap("res/clear.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon16.addPixmap(
+            QtGui.QPixmap("res/clear.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_ac.setIcon(icon16)
         self.pushButton_ac.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_ac.setFlat(True)
@@ -299,7 +321,9 @@ class Ui_MainWindow(object):
         self.pushButton_n2.setStyleSheet("")
         self.pushButton_n2.setText("")
         icon17 = QtGui.QIcon()
-        icon17.addPixmap(QtGui.QPixmap("res/2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon17.addPixmap(
+            QtGui.QPixmap("res/2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         self.pushButton_n2.setIcon(icon17)
         self.pushButton_n2.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_n2.setFlat(True)
@@ -343,6 +367,7 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
